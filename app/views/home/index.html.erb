@@ -1,3 +1,10 @@
 <h1>Home#index</h1>
 <p>ありがとうございます。</p>
+<% @test1s.each do |test1| %>
+<ul>
+<li>
+<%= link_to test1.name, home_index_path(:id) %>
+</li>
+</ul>
+<% end %>
 <p>Find me in app/views/home/index.html.erb</p>
