@@ -1,0 +1,9 @@
+<h1>Post#index</h1>
+<p>ありがとうございます。</p>
+<% @test1s.each do |test1| %>
+<ul>
+<li>
+<%= link_to test1.name, post_path(test1) %>
+</li>
+</ul>
+<% end %>
